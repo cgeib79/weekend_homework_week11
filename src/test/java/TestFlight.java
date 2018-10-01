@@ -18,6 +18,11 @@ public class TestFlight {
     assertEquals(1, flight1.hasFlightNumber());
     }
 
+    @Test
+    public void hasDestination(){
+        assertEquals("GLA", flight1.getDestination());
 
-
+    @Test
+    public void hasPlane()
+    }
 }
