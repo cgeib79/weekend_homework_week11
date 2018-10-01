@@ -1,13 +1,24 @@
+import java.util.ArrayList;
+
 public class Plane {
 
-    private String type;
+    private PlaneType planeType;
+    private Airline airline;
+    private ArrayList<Passenger> passengers;
 
-    public Plane(String type){
-        this.type = type;
+
+    public Plane(PlaneType planeType, Airline airline) {
+        this.planeType = planeType;
+        this.airline = airline;
+        this.passengers = new ArrayList<>();
     }
 
-    public String getType() {
-        return this.type;
+
+    public PlaneType getPlaneType() {
+        return this.planeType;
     }
 
+    public Airlines getAirline() {
+        return this.airline;
+    }
 }
